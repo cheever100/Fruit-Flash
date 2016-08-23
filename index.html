@@ -9,37 +9,107 @@
 </head>
 	
 <body>
+
+	<nav>
+		<img src="img/sponsors/HEB.jpg" width="267px" height="100px">
+		<img src="img/sponsors/Mayors-Fitness-Council.jpg" width="257px" height="100px">
+		<img src="img/sponsors/aetna.jpg" width="199px" height="100px">
+	</nav>
+
 	<h1>Fruit Flash!</h1>
 
-<p>Description - Quiz 1</p>
+<!-- First Question -->
+<p>Question 1</p>
 
 <img src="img/raspberries.jpeg" width="300px" height="200px">
 
-<ul>
-	<li>extremely juicy</li>
-	<li>has been around since prehistoric times</li>
-	<li>usually planted in fields or forest clearings and the plant is very hardy</li>
-	<li>enjoyed raw or cooked in pies, jams, and sauces</li>
-	<li>leaves are brewed in teas</li>
-</ul>
+<div class="flip" name="q1">Click for helpful hints</div>
 
-	<div id="answer_box"></div>
+<div id="panel" name="q1">
+		<ul>
+			<li>extremely juicy</li>
+			<li>have been around since prehistoric times</li>
+			<li>usually planted in fields or forest clearings and the plant is very hardy</li>
+			<li>enjoyed raw or cooked in pies, jams, and sauces</li>
+			<li>leaves are brewed in teas</li>
+		</ul>
+</div>
+
     <p>
-    <h4>Please choose the right answer:</h4> 
-<!--         <label><input type="radio" name="berry" value="incorrect.">blackberries</label>
+    <h4>Please choose the right answer:</h4>
+
+        <label><input type="radio" name="q1" value="blackberries">blackberries</label>
         <br> 
-        <label><input type="radio" name="berry" value="incorrect.">mulberries</label>
+        <label><input type="radio" name="q1" value="mulberries">mulberries</label>
         <br>
-        <label><input type="radio" name="berry" value="CORRECT!">raspberries</label> -->
-        <label><input type="radio" name="berry" value="blackberries">blackberries</label>
-        <br> 
-        <label><input type="radio" name="berry" value="mulberries">mulberries</label>
-        <br>
-        <label><input type="radio" name="berry" value="raspberries">raspberries</label>
+        <label><input type="radio" name="q1" value="raspberries">raspberries</label>
         <br>
     </p>
-    <p><input type="button" value="Submit"></p>
-	
+    <p><input type="button" id="q1" value="Submit"></p>
+    <div id="answer_box" name="q1"></div>
+    <br>
+<!-- Second Question -->
+<p>Question 2</p>
+
+<img src="img/papaya.jpg" width="300px" height="230px">
+
+	<div class="flip" name="q2">Click for helpful hints</div>
+
+	<div id="panel" name="q2">
+		<ul>
+			<li>originally from southern Mexico</li>
+			<li>eaten raw, without skin or seeds</li>
+			<li>the black seeds are sometimes ground and used as a substitute for black pepper</li>
+			<li>a significant source of vitamin C</li>
+			<li>ranked fourth in total tropical fruit production after bananas, oranges, and mango</li>
+		</ul>
+	</div>
+
+	<div id="answer_box" name="q2"></div>
+    <p>
+    <h4>Please choose the right answer:</h4> 
+
+        <label><input type="radio" name="q2" value="kiwi">kiwi</label>
+        <br> 
+        <label><input type="radio" name="q2" value="papaya">papaya</label>
+        <br>
+        <label><input type="radio" name="q2" value="pomegranate">pomegranate</label>
+        <br>
+    </p>
+    <p><input type="button" id="q2" value="Submit"></p>
+	<div id="answer_box" name="q2"></div>
+    <br>
+<!-- Third Question -->
+<p>Question 3</p>
+
+<img src="img/pomegranate.jpeg" width="300px" height="248px">
+
+	<div class="flip" name="q3">Click for helpful hints</div>
+
+	<div id="panel" name="q3">	
+		<ul>
+			<li>originated in the region of modern-day Iran</li>
+			<li>french term for the word is source for the military word "grenade"</li>
+			<li>plant life extremely long: up to 200 years</li>
+			<li>number of seeds can vary from 200 to 1400</li>
+			<li>drought-tolerant</li>
+		</ul>
+	</div>
+
+    <p>
+    <h4>Please choose the right answer:</h4> 
+
+        <label><input type="radio" name="q3" value="red apples">red apples</label>
+        <br> 
+        <label><input type="radio" name="q3" value="pomegranates">pomegranates</label>
+        <br>
+        <label><input type="radio" name="q3" value="cherries">cherries</label>
+        <br>
+    </p>
+    <p><input type="button" id="q3" value="Submit"></p>
+    <div id="answer_box" name="q3"></div>
+    <br>
+
 </body>
 
 </html>

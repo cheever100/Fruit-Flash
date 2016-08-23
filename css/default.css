@@ -1,0 +1,14 @@
+* {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#panel, .flip {
+    padding: 5px;
+    text-align: left;
+    background-color: yellow;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 5px;
+    display: none;
+}
