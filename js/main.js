@@ -1,40 +1,39 @@
-
-
+var answers = {q1:"raspberries", q2:"papaya", q3:"pomegranates"}
 
 $(document).ready(function(){
-	
-	$(document).submit(function(e){
-		e.preventDefault();
-		
-		if($("input[type='radio'].berryClass").is(':checked')) {
-    	var card_type = $("input[type='radio'].berryClass:checked").val();
-    	alert(card_type);
-		}
 
-		// if( $(this).hasClass("yes")) {
-		// 	alert("You are correct!");
-		// } else {
-		// 	alert("Sorry, try again.");
-		// }
-	});
+    // slide bar for helpful hints
+    // $("#flip").click(function(){
+    //     $("#panel").slideDown("slow");
+    // });
 
- });
+// slide bar for helpful hints
+    $(".flip").click(function(){
+        $("#panel[name='"+this.getAttribute('name')+"']").slideDown("slow");
+        console.log(this.getAttribute('name'));
+    });
 
 
 
-// $(document).ready(function(){
-//     $("form").click(function(){
-//         alert($("p").hasClass("yes"));
-//     });
-// });
 
-// //from StackOverFlow 
-// <input type="radio" class="radioBtnClass" name="numbers" value="1" />1<br/>
-// <input type="radio" class="radioBtnClass" name="numbers" value="2" />2<br/>
-// <input type="radio" class="radioBtnClass" name="numbers" value="3" />3<br/>
-// //This will return, checked radio button value.
 
-// if($("input[type='radio'].radioBtnClass").is(':checked')) {
-//     var card_type = $("input[type='radio'].radioBtnClass:checked").val();
-//     alert(card_type);
-// }
+
+
+    // selecting answers
+    $("input[type='button']").click(function(){ 
+        var radio_selector = "input[name='"+this.id+"']:checked";
+        var radioValue = $(radio_selector).val();
+        var answer_box_selector = "#answer_box[name='"+this.id+"']";
+            
+        if( radioValue == answers[this.id] ) {
+           
+            $(answer_box_selector).html("Good job!");
+               
+        } else {	
+            	
+            $(answer_box_selector).html("Sorry, try again!");    
+        }
+    });  
+});
+
+
