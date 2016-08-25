@@ -11,13 +11,9 @@ body {
 .sponsors {
   width: 100%;
   float: left;
-  /*margin: 0;*/
-  /*padding: 0;*/
   list-style: none;
    /*aqua*/
   background-color: #00FFFF;
-  /*border-bottom: 0; */
-  /*border-top: 0; */
 }
 
 .sponsors li {
@@ -65,7 +61,6 @@ body {
   /*bright blue*/
   color: #0000ff;
   padding: 0 20px;
-  /*font-size: 150%;*/
 }
 
 .intro h1 {
@@ -82,7 +77,7 @@ body {
   margin-left: 10px;
   text-align: justify;
 }
-   
+  
 .intro a {
   /*lavender*/
   color: rgb(165, 63, 191);
