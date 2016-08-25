@@ -1,23 +1,12 @@
-var answers = {q1:"raspberries", q2:"papaya", q3:"pomegranates"}
+var answers = {l1q1:"raspberries", l1q2:"papaya", l1q3:"pomegranates", l2q1:"rambutan"}
 
 $(document).ready(function(){
-
-    // slide bar for helpful hints
-    // $("#flip").click(function(){
-    //     $("#panel").slideDown("slow");
-    // });
 
 // slide bar for helpful hints
     $(".flip").click(function(){
         $("#panel[name='"+this.getAttribute('name')+"']").slideDown("slow");
         console.log(this.getAttribute('name'));
     });
-
-
-
-
-
-
 
     // selecting answers
     $("input[type='button']").click(function(){ 
